@@ -13,6 +13,9 @@
 .contact_jumbotron { background-color: #f19b9b; center no-repeat; background-size: cover;}
 
 
+
+.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+
 @include media-breakpoint-up(sm) {
   html {
     font-size: 
