@@ -1,5 +1,11 @@
 
-.jumbotron { background:url(../img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2014.png) center no-repeat; background-size: cover;}
+.jumbotron {
+	padding-top: 0px;
+    background-image: url(../img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2014.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 400px;
+}
 
 .card-text {color: #6b6b6b; text-align: center;}
 
