@@ -1,37 +1,112 @@
-
 .jumbotron {
     background-image: url(../img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2028.png);
-	background-size: cover;
-	background-position: 50% 50%;
-	height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 400px;
 }
 
-.card-text {color: #6b6b6b; text-align: center;}
+.card-text {
+    color: #6b6b6b;
+    text-align: center;
+}
 
-.important_jumbotron {background-color: #FFFFFF; center no-repeat; background-size: cover;}
+.important_jumbotron {
+    background-color: #FFFFFF;
+    center no-repeat;
+    background-size: cover;
+}
 
-.activity_jumbotron {background-color: #fff100; center no-repeat; background-size: cover;}
+.activity_jumbotron {
+    background-color: #fff100;
+    center no-repeat;
+    background-size: cover;
+}
 
-.profile_jumbotron { background-color: #fff100; center no-repeat; background-size: cover;}
+.profile_jumbotron {
+    background-color: ;
+    center no-repeat;
+    background-size: cover;
+}
 
-.contact_jumbotron { background-color: #ff7b90; center no-repeat; background-size: cover; margin-bottom: 5%;}
+.contact_jumbotron {
+    background-color: ;
+    center no-repeat;
+    background-size: cover;
+}
 
 
 
-.wf-sawarabimincho { font-family: "Sawarabi Mincho"; }
+.wf-sawarabimincho {
+    font-family: "Sawarabi Mincho";
+}
+
+.circle {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center;
+    line-height: 200px;
+    vertical-align: middle;
+    border: solid 1px #bfbfbf;
+}
 
 @include media-breakpoint-up(sm) {
-  html {
-    font-size: 
-  }
+    html {
+        font-size:
+    }
 }
 
 html {
-  font-size: 12px;
+    font-size: 12px;
+}
+
+.card-columns .card {
+    margin-left: .9rem;
+    margin-bottom: .9rem;
+    margin-right: .9rem;
 }
 
 @include media-breakpoint-up(sm) {
-  .jumbotron-text p{
-    font-size: 1.2px;
-  }
+    .jumbotron-text p {
+        font-size: 1.2px;
+    }
+}
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+        column-count: 2;
+    }
+    @include media-breakpoint-only(xl) {
+        column-count: 5;
+    }
+}
+
+body {
+    font-family: “Times New Roman”, “游明朝”, YuMincho, “ヒラギノ明朝 ProN W3”, “Hiragino Mincho ProN”, “メイリオ”, Meiryo, serif;
+}
+
+.message {
+    margin-top: 3%;
+    text-align: center;
+}
+
+
+#masonry {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #EEE;
+    overflow: auto;
+}
+
+.grid {
+    width: 160px;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+    background: #424242;
+    color: #fff;
+    display: inline;
+
 }

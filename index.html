@@ -21,12 +21,30 @@
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script>
+        $(function() {
+            $('#masonry').masonry({
+                itemSelector: '.grid',
+                isFitWidth: true,
+                isAnimated: true,
+                percentPosition: true,
+                columnWidth: 160
+
+            });
+        });
+    </script>
 </head>
+
 
 <body>
     <header>
         <div class="container">
 
+            <!--
             <div class="nav-scroller py-1 mb-2">
                 <nav class="nav d-flex justify-content-between">
                     <a class="p-2 text-muted" href="#">活動実績</a>
@@ -34,19 +52,21 @@
                     <a class="p-2 text-muted" href="#">お問い合わせ</a>
                 </nav>
             </div>
+            -->
         </div>
     </header>
-    <section class="jumbotron text-center">
+    <section class=" text-center">
         <div class="container">
             <div style="text-align: center ">
                 <div class="container">
-                    <div class="text" style="margin-top: 20%;">
-                        <h1 class="jumbotron-heading" style="font-family: 'Nothing You Could Do', cursive; font-size: 50px; color:  #000">Good Design Good Life!</h1>
-                        <div class="" style="font-size: 15px; background-color: #ffa000;color: #FFF; letter-spacing: 5px; line-height: 30px;">
-                            <p class="wf-sawarabimincho">
-                                くらしを彩るお手伝いをします
-                                <br>
-                            </p>
+                    <div class="text" style="margin-top: 3%">
+                        <div class="circle">
+                            <span class="" style="font-family:HelveticaNeue-UltraLight; font-size: 50px; color:  #000">YUXIO</span>
+                        </div>
+                        <div class="message">
+                            <p>都内在住のデータアナリスト兼Webデザイナー<br> Webデザインとコミュニティデザインを行なっています
+                                <br></p>
+                            <p style="font-size: 10px">詳しくはこちら</p>
                         </div>
                     </div>
                 </div>
@@ -54,125 +74,25 @@
         </div>
     </section>
     <main role="main">
-        <!--大切にしているコト-->
-
-        <div class="important_jumbotron jumbotron-text">
+        <!--リスト-->
+        <div class="container">
             <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12" style="text-align: center; font-size: 20px; margin-top: 40px;margin-bottom: 40px;">
-                        制作時に大切にしているコト<br>
-                        <span style="border-bottom: solid 2px #FFF100">いっしょにつくりあげていく”たのしさ”を共有します</span>
-                        <p style="text-align: center; font-size: 15px">>testtesttest</p>
-                        <span style="border-bottom: solid 2px #FFF100">想いやイメージを具体化するために"あなたの声"を大切にします</span>
-                        <p style="text-align: center; font-size: 15px">>testtesttest</p>
-                        <span style="border-bottom: solid 2px #FFF100"> ”クイックレスポンス”を心がけます</span>
-                        <p style="text-align: center; font-size: 15px">>testtesttest</p>
-
-                    </div>
+                <div class="row justify-content-center">
                 </div>
             </div>
-        </div>
-        <!--活動実績-->
-
-        <div class="activity_jumbotron jumbotron-text">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12" style="text-align: center; font-size: 20px; padding-top: 2%; padding-bottom: 2%;">活動実績
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2025.png">
-                            <div class="card-body card-text">
-                                <h3>UI design</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%209.png">
-                            <div class="card-body card-text">
-                                <h3>Business Card</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2012.png" alt="Card image cap">
-                            <div class="card-body card-text">
-                                <h3>Eye catching</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2011.png" alt="Card image cap">
-
-                            <div class="card-body card-text">
-                                <h3>Logo</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2023.png" alt="Card image cap">
-                            <div class="card-body card-text">
-                                <h3>Qiita</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="img/%E3%82%A2%E3%82%BB%E3%83%83%E3%83%88%2026.png" alt="Card image cap">
-                            <div class="card-body card-text">
-                                <h3>Community</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="profile_jumbotron jumbotron-text">
-                <div class="container" style="margin-top: 40px;margin-bottom: 40px;">
-                    <div class="row">
-                        <div class="col-md-12" style="text-align: center; font-size: 10px;margin-top: 50px;margin-bottom: 50px;">
-                            <p style="text-align: center; font-size: 30px">Yuxio</p>
-
-                            <p style="text-align: center; font-size: 15px">
-                                認知から離脱までのユーザー体験を考慮したシンプルなデザインが得意です</p>
-                            <br>
-                            <p style="text-align: center; font-size: 10px">詳しくはこちら</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
     <div class="contact_jumbotron jumbotron-text">
-        <div class="container" style="color: white; margin-bottom: 5%;">
+        <div class="container" style="margin-bottom: 5%;">
             <div class="row">
-
                 <div class="col-md-12" style="text-align: center; font-size: 20px; ">
                     お問い合わせ
-
                 </div>
-
-
             </div>
         </div>
     </div>
     <div class="col-md-12" style="text-align: center; font-size: 20px; ">
-        <button type="button" class="btn" style="background-color:  #26c6da; color:#FFFFFF; font-size: 15px;">相談する</button>
-
+        <button type="button" class="btn" style="background-color:  #000000; color:#FFFFFF; font-size: 15px;">相談する</button>
     </div>
     <footer class="text-muted">
         <div class="container">
