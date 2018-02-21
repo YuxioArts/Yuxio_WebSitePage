@@ -84,7 +84,10 @@ html {
 }
 
 body {
-    font-family:“Hiragino Mincho ProN”, “ヒラギノ明朝 ProN W3”, “ヒラギノ明朝 ProN”, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-family: "Hiragino Sans";
+    src: local(HiraginoSans-W0);
+    font-weight: 200;
+    #font-family: “Hiragino Mincho ProN”, “ヒラギノ明朝 ProN W3”, “ヒラギノ明朝 ProN”, "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 .message {
