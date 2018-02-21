@@ -84,9 +84,7 @@ html {
 }
 
 body {
-    font-family: "Hiragino Sans";
-    src: local(HiraginoSans-W0);
-    font-weight: 100;
+    font-family: "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, Meiryo, sans-serif;
 }
 
 .message {
