@@ -42,12 +42,12 @@
 
 .circle {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     background: #FFFFFF;
     text-align: center;
-    line-height: 200px;
+    line-height: 165px;
     vertical-align: middle;
     border: solid 1px #bfbfbf;
 }
@@ -85,8 +85,9 @@ html {
 
 body {
     font-family: "Hiragino Sans";
-    src: local(HiraginoSans-W0);
-    font-weight: 100;
+    font-weight: 200;
+    word-wrap: break-word;
+    letter-spacing: 1px;
 }
 
 .message {
